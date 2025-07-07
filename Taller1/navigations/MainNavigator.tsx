@@ -4,6 +4,10 @@ import LoginScreen from "../screens/LoginScreen"
 import RegisterScreen from "../screens/RegisterScreen"
 import { createDrawerNavigator } from "@react-navigation/drawer"
 import { NavigationContainer } from "@react-navigation/native"
+import PerfilScreen from "../screens/PerfilScreen"
+import ListaPedidosScreen from "../screens/ListaPedidosScreen"
+import FacturacionScreen from "../screens/FacturacionScreen"
+import SoporteScreen from "../screens/SoporteScreen"
 
 const Stack = createStackNavigator()
 function MyStack() {
@@ -21,7 +25,11 @@ const Drawer = createDrawerNavigator()
 function MyDrawer() {
     return (
         <Drawer.Navigator >
-            <Drawer.Screen name="Register" component={RegisterScreen} />
+            <Drawer.Screen name="Perfil" component={PerfilScreen} />
+             <Drawer.Screen name="ListaPedidos" component={ListaPedidosScreen} />
+              <Drawer.Screen name="Facturacion" component={FacturacionScreen} />
+               <Drawer.Screen name="Soporte" component={SoporteScreen} />
+
         </Drawer.Navigator>
     )
 }
