@@ -8,6 +8,7 @@ import PerfilScreen from "../screens/PerfilScreen"
 import ListaPedidosScreen from "../screens/ListaPedidosScreen"
 import FacturacionScreen from "../screens/FacturacionScreen"
 import SoporteScreen from "../screens/SoporteScreen"
+import NuevoPedidoScreen from '../screens/NuevoPedidoScreen';
 
 const Stack = createStackNavigator()
 function MyStack() {
@@ -17,6 +18,7 @@ function MyStack() {
             <Stack.Screen name="Login" component={LoginScreen} />
             <Stack.Screen name="Register" component={RegisterScreen} />
             <Stack.Screen name="Drawer" component={MyDrawer} />
+            <Stack.Screen name="Pedido" component={NuevoPedidoScreen} />
         </Stack.Navigator>
     )
 }
@@ -29,6 +31,7 @@ function MyDrawer() {
              <Drawer.Screen name="ListaPedidos" component={ListaPedidosScreen} />
               <Drawer.Screen name="Facturacion" component={FacturacionScreen} />
                <Drawer.Screen name="Soporte" component={SoporteScreen} />
+               <Drawer.Screen name="NuevoPedido" component={NuevoPedidoScreen} />
 
         </Drawer.Navigator>
     )
