@@ -5,7 +5,7 @@ export default function ListaPedidosScreen({ navigation }: any) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Pedidos</Text>
-      {/* Aquí va tu listado de pedidos */}
+      {}
       <View style={styles.content}>
         <Text style={styles.text}>Pedidos activos y su estado.</Text>
       </View>
