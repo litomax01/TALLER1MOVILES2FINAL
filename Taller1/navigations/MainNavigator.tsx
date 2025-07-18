@@ -42,5 +42,5 @@ export default function NavegadorPrincipal() {
         <NavigationContainer>
             <MyStack />
         </NavigationContainer>
-    )
+    )   
 }
